@@ -1,5 +1,6 @@
 const $main = $('main')
 const $selector = $('#filter')
+const $template = $('#image-template')
 
 const apiURL = 'https://raw.githubusercontent.com/CodePartnersMD/MD301-01/master/02-jquery-selectors-events/lab/page-1.json'
 
@@ -13,6 +14,7 @@ const HornImg = function(imageObj) {
 
 let HornsArray = [];
 
+$template.attr('class', 'hidden')
 HornImg.prototype.renderHorns = imgObj => {
   let $HornClone = $('#image-template').clone()
   $main.append($HornClone)
@@ -20,7 +22,9 @@ HornImg.prototype.renderHorns = imgObj => {
   $HornClone.find('img').attr('src', imgObj.image_url)
   $HornClone.find('p').text(imgObj.description)
   $HornClone.find('h2').text(imgObj.title)
+  $HornClone.attr('class', 'shown');
 }
+
 
 $($selector).on('change', () => {
   $('section').hide()

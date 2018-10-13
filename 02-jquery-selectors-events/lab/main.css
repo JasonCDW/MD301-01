@@ -1,8 +1,19 @@
 img {
     width: 200px;
-  }
-  
-  section {
+    text-align: center;
+}
+main {
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+section {
+    text-align: center;
     display: inline-block;
-    margin: 4em;
-  }
+    margin: 2em;
+    width: 25%;
+}
+header{
+    text-align: center;
+}
