@@ -1,0 +1,23 @@
+img {
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+section {
+    text-align: center;
+    display: inline-block;
+    margin: 2em;
+    width: 25%;
+}
+header{
+    text-align: center;
+}
