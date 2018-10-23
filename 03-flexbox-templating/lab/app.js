@@ -14,6 +14,7 @@ const HornImg = function(imageObj) {
 }
 
 let HornsArray = [];
+let optionArr = [];
 
 // $template.attr('class', 'hidden')
 HornImg.prototype.renderHorns = imgObj => {
@@ -39,6 +40,7 @@ $.getJSON(apiURL, response => {
   response.forEach((val) => {
     let newHorn = new HornImg(val);
     HornsArray.push(newHorn);
+    optionArr.push(newHorn.keyword);
     $main.append(newHorn.renderHorns(val));
     $selector.append(`<option value=${newHorn.keyword}>${newHorn.keyword}</option>`);
   })
