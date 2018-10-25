@@ -1,0 +1,26 @@
+{
+  "name": "md301-01",
+  "version": "1.0.0",
+  "description": "![CF](https://i.imgur.com/7v5ASc8.png)\r # Code 301: Intermediate Software Development",
+  "main": "jest.config.js",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonCDW/MD301-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonCDW/MD301-01/issues"
+  },
+  "homepage": "https://github.com/JasonCDW/MD301-01#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
